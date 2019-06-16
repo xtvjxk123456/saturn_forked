@@ -9,7 +9,7 @@ install:
     - cmd: set PATH=C:\Program Files\Git\cmd;C:\cygwin64\bin;C:\Program Files (x86)\CMake\bin;C:\Windows\System32;C:\Windows\System32\wbem
 
     # Python
-    - cmd: curl https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64.msi -o python.msi
+    - cmd: curl https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64.msi -o python.msi
     - cmd: msiexec /a python.msi /qb TARGETDIR=C:\projects\saturn\python
     - cmd: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     - cmd: python\python.exe get-pip.py
@@ -58,7 +58,7 @@ install:
     - cmd: '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"'
 
     # Maya 2018 devkit
-    - cmd: curl --tlsv1.2 -o mayaDevkit.zip -L https://github.com/VictorYudin/saturn/releases/download/Maya2018Devkit/Maya2018-DEVKIT_Windows.zip
+    - cmd: curl --tlsv1.2 -o mayaDevkit.zip -L https://github.com/xtvjxk123456/saturn_forked/releases/download/maya2017_bin/maya2017_devkit.rar
     - cmd: usr\bin\unzip -q mayaDevkit.zip
     - cmd: rm -rf devkitBase/include/tbb
     - cmd: rm -rf devkitBase/include/python2.7
